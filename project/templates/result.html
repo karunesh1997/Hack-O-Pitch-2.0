@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        /* CSS for the table */
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table th, .table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #030303;
+        }
+
+        .table th {
+            background-color: #f9c540;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #9ae0f3;
+        }
+
+        /* CSS for table animation */
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .table {
+            animation: fade-in 1s ease-in-out;
+        }
+
+        /* CSS for main header */
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* CSS for home link */
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated Names</h1>
+    <table class="table">
+        <tr>
+            <th>Sno</th>
+            <th>Suggested Name</th>
+        </tr>
+        {% for i in range(data[0]) %}
+        {% set r_ind_1 = range(0, 24)|random %}
+    
+        <tr>
+            <td>{{ i+1 }}</td>
+            <td>{{ data[1][:3]+data[2][:3]+pref[r_ind_1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{url_for('name')}}" class="home-link">HOME</a>
+</body>
+</html>

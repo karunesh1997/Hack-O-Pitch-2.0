@@ -1,0 +1,328 @@
+/* para */
+#para {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#para p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+/* Add some basic styling to the chat container */
+#chat-container {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the chat display area */
+  #chat-display {
+    height: 80%;
+    overflow-y: scroll;
+  }
+  
+  /* Style the user input form */
+  #user-input-form {
+    display: flex;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  #send-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #send-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the chat messages */
+  .user-message,
+  .bot-message {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .user-message {
+    background-color: #c7edfc;
+    border-radius: 5px;
+  }
+  
+  .bot-message {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  /* Add animation to the chat messages */
+  .user-message,
+  .bot-message {
+    opacity: 0;/* Add some basic styling to the chat container */
+    #chat-container {
+      width: 400px;
+      height: 500px;
+      border: 1px solid #ccc;
+      margin: 50px auto;
+      padding: 20px;
+      overflow-y: scroll;
+      background-color: #f5f5f5;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Style the chat display area */
+    #chat-display {
+      height: 80%;
+      overflow-y: scroll;
+    }
+    
+    /* Style the user input form */
+    #user-input-form {
+      display: flex;
+    }
+    
+    #user-input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    #send-button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    #send-button:hover {
+      background-color: #45a049;
+    }
+    
+    /* Style the chat messages */
+    .user-message,
+    .bot-message {
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-left: 19px;
+    }
+    
+    .user-message {
+      background-color: #c7edfc;
+      border-radius: 5px;
+      margin-left: 19px;
+    }
+    
+    .bot-message {
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      margin-left: 19px;
+    }
+    
+    /* Add animation to the chat messages */
+    .user-message,
+    .bot-message {
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: fade-in 0.3s forwards;
+      margin-left: 19px;
+    }
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    transform: translateX(-20px);
+    animation: fade-in 0.3s forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+
+  /* css for name generation */
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    background-color: burlywood;
+    /* animation: spin 10s linear ; */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h1 {
+    text-align: center;
+    color: #f2f5f0;
+    background-color: rgb(133, 14, 180);
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 38px;
+    animation: fade-in 1s ease-in-out;
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animation Keyframes */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* form */
+.inputField {
+    max-width: 400px;
+    margin: 71px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button {
+    display: block;
+    padding: 10px 20px;
+    margin-left: 160px;
+    background-color: #8c0ca9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #45a049;
+}
+
+
+.form-button:hover {
+    background-color: #45a049;
+}
+
+
+/* CSS for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* CSS for table animation */
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  table {
+    animation: fade-in 1s ease-in-out;
+  }
